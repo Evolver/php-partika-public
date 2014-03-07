@@ -23,16 +23,16 @@
 
 [app|style~="categories"] > .title
 {
-	display: none;
+    display: none;
 }
 
 [app|style~="categories"] > .list > .category > .title
 {
-	text-align: center;
-	text-decoration: none;
-	
-	color: #243867;
-	cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    
+    color: #243867;
+    cursor: pointer;
     opacity: 0.7;
     
     float: right;
@@ -71,58 +71,58 @@
 [app|style~="categories"] > .list > .category > .title:hover,
 [app|style~="categories"] > .list > .category.selected > .title
 {
-	color: inherit;
-	opacity: 1;
+    color: inherit;
+    opacity: 1;
 }
 
 [app|style~="categories"] > .list > .category.selected > .title
 {
-	font-size: 1.1rem;
-	text-shadow: 0 0 0.1em white;
+    font-size: 1.1rem;
+    text-shadow: 0 0 0.1em white;
     text-decoration: underline;
 }
 
 [app|style~="categories"] > .list > .category.selected > .title:hover
 {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 [app|style~="categories"] > .list > .category > .title::before
 {
-	content: '';
-	background-repeat: no-repeat;
+    content: '';
+    background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom center;
-	
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	height: 4em;
-	width: 7em;
-	
-	-webkit-transition-property: top;
-	-webkit-transition-duration: 100ms;
-	-webkit-transition-timing-function: ease-out;
-	-webkit-transition-delay: 0;
-	
-	-moz-transition-property: top;
-	-moz-transition-duration: 100ms;
-	-moz-transition-timing-function: ease-out;
-	-moz-transition-delay: 0;
-	
-	-o-transition-property: top;
-	-o-transition-duration: 100ms;
-	-o-transition-timing-function: ease-out;
-	-o-transition-delay: 0;
-	
-	transition-property: top;
-	transition-duration: 100ms;
-	transition-timing-function: ease-out;
-	transition-delay: 0;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 4em;
+    width: 7em;
+    
+    -webkit-transition-property: top;
+    -webkit-transition-duration: 100ms;
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-delay: 0;
+    
+    -moz-transition-property: top;
+    -moz-transition-duration: 100ms;
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-delay: 0;
+    
+    -o-transition-property: top;
+    -o-transition-duration: 100ms;
+    -o-transition-timing-function: ease-out;
+    -o-transition-delay: 0;
+    
+    transition-property: top;
+    transition-duration: 100ms;
+    transition-timing-function: ease-out;
+    transition-delay: 0;
 }
 [app|style~="categories"] > .list > .category > .title:hover::before
 {
-	top: -0.5em;
+    top: -0.5em;
 }
 
 [app|style~="categories"] > .list > .category[data-id="milk"] > .title::before

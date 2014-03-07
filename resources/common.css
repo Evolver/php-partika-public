@@ -9,14 +9,14 @@ label
 
 html
 {
-	min-width: 100%;
-	min-height: 100%;
-	background-color: white;
-	font-size: 1em;
-	font-family: "Franklin Gothic Book", "Lato";
-	color: black;
-	
-	-moz-box-sizing: border-box;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: white;
+    font-size: 1em;
+    font-family: "Franklin Gothic Book", "Lato";
+    color: black;
+    
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -73,13 +73,13 @@ html.loading::after
 
 body
 {
-	margin-top: 1em;
-	margin-left: auto;
-	margin-right: auto;
-	
-	padding: 0 1rem;
-	
-	-moz-box-sizing: border-box;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding: 0 1rem;
+    
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     
     min-width: 24rem;
@@ -87,34 +87,34 @@ body
 
 body a
 {
-	text-decoration: underline;
-	
-	-webkit-transition-property: color, text-decoration, opacity;
-	-webkit-transition-duration: 200ms;
-	-webkit-transition-timing-function: ease-in-out;
-	-webkit-transition-delay: 0;
-	
-	-moz-transition-property: color, text-decoration, opacity;
-	-moz-transition-duration: 200ms;
-	-moz-transition-timing-function: ease-in-out;
-	-moz-transition-delay: 0;
-	
-	-o-transition-property: color, text-decoration, opacity;
-	-o-transition-duration: 200ms;
-	-o-transition-timing-function: ease-in-out;
-	-o-transition-delay: 0;
-	
-	transition-property: color, text-decoration, opacity;
-	transition-duration: 200ms;
-	transition-timing-function: ease-in-out;
-	transition-delay: 0;
-	
-	color: #4d6aab;
+    text-decoration: underline;
+    
+    -webkit-transition-property: color, text-decoration, opacity;
+    -webkit-transition-duration: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-delay: 0;
+    
+    -moz-transition-property: color, text-decoration, opacity;
+    -moz-transition-duration: 200ms;
+    -moz-transition-timing-function: ease-in-out;
+    -moz-transition-delay: 0;
+    
+    -o-transition-property: color, text-decoration, opacity;
+    -o-transition-duration: 200ms;
+    -o-transition-timing-function: ease-in-out;
+    -o-transition-delay: 0;
+    
+    transition-property: color, text-decoration, opacity;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0;
+    
+    color: #4d6aab;
 }
 
 body a:hover
 {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 body > header
@@ -123,26 +123,26 @@ body > header
     box-sizing: border-box;
     
     padding-top: 2rem;
-	
-	-webkit-transition-property: background-size, padding;
-	-webkit-transition-duration: 100ms;
-	-webkit-transition-timing-function: ease-out;
-	-webkit-transition-delay: 0;
-	
-	-moz-transition-property: background-size, padding;
-	-moz-transition-duration: 100ms;
-	-moz-transition-timing-function: ease-out;
-	-moz-transition-delay: 0;
-	
-	-o-transition-property: background-size, padding;
-	-o-transition-duration: 100ms;
-	-o-transition-timing-function: ease-out;
-	-o-transition-delay: 0;
-	
-	transition-property: background-size, padding;
-	transition-duration: 100ms;
-	transition-timing-function: ease-out;
-	transition-delay: 0;
+    
+    -webkit-transition-property: background-size, padding;
+    -webkit-transition-duration: 100ms;
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-delay: 0;
+    
+    -moz-transition-property: background-size, padding;
+    -moz-transition-duration: 100ms;
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-delay: 0;
+    
+    -o-transition-property: background-size, padding;
+    -o-transition-duration: 100ms;
+    -o-transition-timing-function: ease-out;
+    -o-transition-delay: 0;
+    
+    transition-property: background-size, padding;
+    transition-duration: 100ms;
+    transition-timing-function: ease-out;
+    transition-delay: 0;
 }
 
 body > header a,
@@ -159,21 +159,21 @@ body > header > .title
     left: 0;
     right: 0;
     
-	padding: 0.1em 0.8em;
-	font-size: 1.5rem;
-	color: white;
-	
-	background: #5373ba url( "titlebar.bg.1x56.png" ) repeat-x left top;
-	/* Upgrade to linear gradient if possible */
-	background: -moz-linear-gradient( #5475bd, #6186d7 23%, #4964a1 85%, #5475bd );
-	background: -webkit-linear-gradient( #5475bd, #6186d7 23%, #4964a1 85%, #5475bd );
-	background: -ms-linear-gradient( #5475bd, #6186d7 23%, #4964a1 85%, #5475bd );
-	background: linear-gradient( #5475bd, #6186d7 23%, #4964a1 85%, #5475bd );
-	
-	box-shadow: 0.05em 0.05em 0.1em #222222;
-	text-shadow: 0 0 0.05em #333333;
-	
-	-moz-box-sizing: border-box;
+    padding: 0.1em 0.8em;
+    font-size: 1.5rem;
+    color: white;
+    
+    background: #5373ba url( "titlebar.bg.1x56.png" ) repeat-x left top;
+    /* Upgrade to linear gradient if possible */
+    background: -moz-linear-gradient( #5475bd, #6186d7 23%, #4964a1 85%, #5475bd );
+    background: -webkit-linear-gradient( #5475bd, #6186d7 23%, #4964a1 85%, #5475bd );
+    background: -ms-linear-gradient( #5475bd, #6186d7 23%, #4964a1 85%, #5475bd );
+    background: linear-gradient( #5475bd, #6186d7 23%, #4964a1 85%, #5475bd );
+    
+    box-shadow: 0.05em 0.05em 0.1em #222222;
+    text-shadow: 0 0 0.05em #333333;
+    
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     
     min-width: 24rem;
@@ -183,10 +183,10 @@ body > header > .title
  * in the middle of the titlebar. */
 @media all and (max-width:30em)
 {
-	body > header > .title
-	{
-		text-align: center;
-	}
+    body > header > .title
+    {
+        text-align: center;
+    }
 }
 
 body > header > .app
@@ -267,20 +267,20 @@ body > article
 
 body > article::after
 {
-	display: block;
-	clear: both;
-	content: " ";
-	height: 0;
-	overflow: hidden;
+    display: block;
+    clear: both;
+    content: " ";
+    height: 0;
+    overflow: hidden;
 }
 
 body > article > header
 {
-	font-size: 1.25rem;
-	font-weight: bold;
-	text-align: center;
-	padding-top: 1em;
-	padding-bottom: 0.7em;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 0.7em;
 }
 
 body > article > header ~ header
@@ -290,7 +290,7 @@ body > article > header ~ header
 
 body > article section.text > p
 {
-	text-align: justify;
+    text-align: justify;
 }
 
 body > article section.text > p::before
@@ -302,14 +302,14 @@ body > article section.text > p::before
 
 body > article section.text > p + p
 {
-	margin-top: 1em;
+    margin-top: 1em;
 }
 
 body > footer
 {
-	margin: 4em 0 0 0;
-	padding: 1em 0;
-	background-color: #fafafa;
+    margin: 4em 0 0 0;
+    padding: 1em 0;
+    background-color: #fafafa;
 }
 
 /* Simulates 1em bottom margin. Needed for certain browsers
