@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* http://www.w3.org/TR/css3-webfonts/#font-face-rule */
+
+@font-face
+{
+    font-family: "Franklin Gothic Book";
+    src: local( "Franklin Gothic Book" ),
+         url( "FranklinGothicBook-Regular.ttf" ) format( "truetype" );
+}
+
+@font-face
+{
+    font-family: "Franklin Gothic Book";
+    font-style: italic;
+    src: local( "Franklin Gothic Book" ),
+         url( "FranklinGothicBook-It.ttf" ) format( "truetype" );
+}
+
+@font-face
+{
+    font-family: "Lato";
+    src: local( "Lato Regular" ),
+         url( "Lato-Regular.woff" ) format( "woff" );
+}
+
+@font-face
+{
+    font-family: "Lato";
+    font-style: italic;
+    src: local( "Lato Italic" ),
+         url( "Lato-Italic.woff" ) format( "woff" );
+}

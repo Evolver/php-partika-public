@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/* Force all browsers to have the same initial rendering
+ * settings. This will avoid conflicts between browsers'
+ * default style sheets and stylesheets used by the
+ * application */
+
+/* By default, font-size is 1em, which is (usually) 16px.
+ * Not all agents may use 16px as default, but in most cases they do. */
+
+/* FIXME: line-height should be "inherit"ed by default.
+   FIXME: Set default line-height of 1.2em on html element. */
+
+*|*,
+*|*::before,
+*|*::after
+{
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    line-height: 1.2em;
+    white-space: inherit;
+    
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+img
+{
+    border: none;
+}
+
+ul, ol
+{
+    list-style-type: none;
+}
+
+input, textarea
+{
+    outline: 0;
+}

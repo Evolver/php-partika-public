@@ -1,0 +1,563 @@
+@charset "UTF-8";
+
+@namespace app "http://stepanov.lv/2013/rtk/partika";
+
+[app|style~="products"]
+{
+    padding: 0.5em 0;
+    text-align: center;
+}
+
+[app|style~="products"] > .product
+{
+    font-size: 1.25em;
+    display: inline-block;
+    vertical-align: top;
+    
+    position: relative;
+    width: 10em;
+    margin: 0.5em;
+    
+    overflow: hidden;
+    
+    -webkit-transition-property: font-size;
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 100ms;
+    -webkit-transition-delay: 0;
+    
+    -moz-transition-property: font-size;
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 100ms;
+    -moz-transition-delay: 0;
+    
+    transition-property: font-size;
+    transition-timing-function: ease-out;
+    transition-duration: 100ms;
+    transition-delay: 0;
+}
+
+@media all and (max-width:60em)
+{
+    [app|style~="products"] > .product
+    {
+        font-size: 1.1em;
+    }
+}
+
+@media all and (max-width:50em)
+{
+    [app|style~="products"] > .product
+    {
+        font-size: 1em;
+    }
+}
+
+@media all and (max-width:47em)
+{
+    [app|style~="products"] > .product
+    {
+        font-size: 0.9em;
+    }
+}
+
+@media all and (max-width:43em)
+{
+    [app|style~="products"] > .product
+    {
+        font-size: 1em;
+    }
+}
+
+@media all and (max-width:37em)
+{
+    [app|style~="products"] > .product
+    {
+        font-size: 0.8em;
+    }
+}
+
+@media all and (max-width:33em)
+{
+    [app|style~="products"] > .product
+    {
+        font-size: 1.1em;
+    }
+}
+
+[app|style~="products"] > .product > .summary
+{
+    display: block;
+}
+
+[app|style~="products"] > .product > .summary::before
+{
+    display: block;
+    line-height: 8em;
+    vertical-align: middle;
+    content: ' ';
+    
+    height: 8em;
+    width: 9em;
+    
+    background-image: url( 'products/undefined.160x160.png' );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+    margin: 0;
+    text-align: center;
+    
+    -webkit-transition-property: width, margin-right;
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 100ms;
+    -webkit-transition-delay: 0;
+    
+    -moz-transition-property: width, margin-right;
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 100ms;
+    -moz-transition-delay: 0;
+    
+    transition-property: width, margin-right;
+    transition-timing-function: ease-out;
+    transition-duration: 100ms;
+    transition-delay: 0;
+}
+
+/* Below are the icons of the various products. In an advanced production
+ * system the CSS statements below would be generated automatically. */
+
+/* Alcohol */
+[app|style~="products"] > .product[data-id="aldaris.beer"] > .summary::before
+{
+    background-image: url( 'products/alcohol/aldaris.beer.46x160.png' );
+}
+[app|style~="products"] > .product[data-id="asti.martini"] > .summary::before
+{
+    background-image: url( 'products/alcohol/asti.martini.48x160.png' );
+}
+[app|style~="products"] > .product[data-id="cesu.beer"] > .summary::before
+{
+    background-image: url( 'products/alcohol/cesu.beer.42x160.png' );
+}
+[app|style~="products"] > .product[data-id="fundador.brandy"] > .summary::before
+{
+    background-image: url( 'products/alcohol/fundador.brandy.49x160.png' );
+}
+[app|style~="products"] > .product[data-id="jack_daniels.whiskey"] > .summary::before
+{
+    background-image: url( 'products/alcohol/jack_daniels.whiskey.49x160.png' );
+}
+[app|style~="products"] > .product[data-id="rubenis.livu.beer"] > .summary::before
+{
+    background-image: url( 'products/alcohol/rubenis.livu.beer.46x160.png' );
+}
+[app|style~="products"] > .product[data-id="sencu.livu.beer"] > .summary::before
+{
+    background-image: url( 'products/alcohol/sencu.livu.beer.106x160.png' );
+}
+[app|style~="products"] > .product[data-id="sierra.tequila"] > .summary::before
+{
+    background-image: url( 'products/alcohol/sierra.tequila.108x160.png' );
+}
+[app|style~="products"] > .product[data-id="tullamore_dew.whiskey"] > .summary::before
+{
+    background-image: url( 'products/alcohol/tullamore_dew.whiskey.73x160.png' );
+}
+
+/* Milk products */
+[app|style~="products"] > .product[data-id="karums.curd"] > .summary::before
+{
+    background-image: url( 'products/milk_products/karums.curd.160x147.png' );
+}
+[app|style~="products"] > .product[data-id="karums.curd_bun"] > .summary::before
+{
+    background-image: url( 'products/milk_products/karums.curd_bun.160x123.png' );
+}
+[app|style~="products"] > .product[data-id="karums.milk"] > .summary::before
+{
+    background-image: url( 'products/milk_products/karums.milk.77x160.png' );
+}
+[app|style~="products"] > .product[data-id="lase.milk"] > .summary::before
+{
+    background-image: url( 'products/milk_products/lase.milk.80x160.png' );
+}
+[app|style~="products"] > .product[data-id="limbazu.milk"] > .summary::before
+{
+    background-image: url( 'products/milk_products/limbazu.milk.60x160.png' );
+}
+[app|style~="products"] > .product[data-id="smiltene.sour_cream"] > .summary::before
+{
+    background-image: url( 'products/milk_products/smiltene.sour_cream.121x160.png' );
+}
+[app|style~="products"] > .product[data-id="tautas.dense.milk"] > .summary::before
+{
+    background-image: url( 'products/milk_products/tautas.dense.milk.129x160.png' );
+}
+
+/* Vegetables */
+[app|style~="products"] > .product[data-id="broccoli"] > .summary::before
+{
+    background-image: url( 'products/vegetables/broccoli.160x118.png' );
+}
+[app|style~="products"] > .product[data-id="cabbage"] > .summary::before
+{
+    background-image: url( 'products/vegetables/cabbage.143x160.png' );
+}
+[app|style~="products"] > .product[data-id="carrots"] > .summary::before
+{
+    background-image: url( 'products/vegetables/carrots.160x83.png' );
+}
+[app|style~="products"] > .product[data-id="cucumbers"] > .summary::before
+{
+    background-image: url( 'products/vegetables/cucumbers.160x106.png' );
+}
+[app|style~="products"] > .product[data-id="green.onions"] > .summary::before
+{
+    background-image: url( 'products/vegetables/green.onions.160x130.png' );
+}
+[app|style~="products"] > .product[data-id="onions"] > .summary::before
+{
+    background-image: url( 'products/vegetables/onions.160x119.png' );
+}
+[app|style~="products"] > .product[data-id="parsley"] > .summary::before
+{
+    background-image: url( 'products/vegetables/parsley.147x160.png' );
+}
+[app|style~="products"] > .product[data-id="potatoes"] > .summary::before
+{
+    background-image: url( 'products/vegetables/potatoes.160x103.png' );
+}
+[app|style~="products"] > .product[data-id="tomatoes"] > .summary::before
+{
+    background-image: url( 'products/vegetables/tomatoes.158x160.png' );
+}
+
+/* Meat products */
+[app|style~="products"] > .product[data-id="pork"] > .summary::before
+{
+    background-image: url( 'products/meat/pork.160x88.png' );
+}
+[app|style~="products"] > .product[data-id="beef"] > .summary::before
+{
+    background-image: url( 'products/meat/beef.160x102.png' );
+}
+[app|style~="products"] > .product[data-id="mince"] > .summary::before
+{
+    background-image: url( 'products/meat/mince.160x134.png' );
+}
+
+/* Seafood */
+[app|style~="products"] > .product[data-id="crawfish"] > .summary::before
+{
+    background-image: url( 'products/seafood/crawfish.160x94.png' );
+}
+[app|style~="products"] > .product[data-id="dried.roach"] > .summary::before
+{
+    background-image: url( 'products/seafood/dried.roach.160x116.png' );
+}
+[app|style~="products"] > .product[data-id="herring"] > .summary::before
+{
+    background-image: url( 'products/seafood/herring.160x48.png' );
+}
+[app|style~="products"] > .product[data-id="salmon"] > .summary::before
+{
+    background-image: url( 'products/seafood/salmon.160x46.png' );
+}
+[app|style~="products"] > .product[data-id="salmon.caviar"] > .summary::before
+{
+    background-image: url( 'products/seafood/salmon.caviar.160x147.png' );
+}
+[app|style~="products"] > .product[data-id="trout"] > .summary::before
+{
+    background-image: url( 'products/seafood/trout.160x58.png' );
+}
+
+/* Cakes */
+[app|style~="products"] > .product[data-id="birthday.cake"] > .summary::before
+{
+    background-image: url( 'products/cakes/birthday.cake.160x158.png' );
+}
+[app|style~="products"] > .product[data-id="bonton.chocolate.cake"] > .summary::before
+{
+    background-image: url( 'products/cakes/bonton.chocolate.cake.160x142.png' );
+}
+[app|style~="products"] > .product[data-id="cake"] > .summary::before
+{
+    background-image: url( 'products/cakes/cake.160x103.png' );
+}
+[app|style~="products"] > .product[data-id="chocolate.cake"] > .summary::before
+{
+    background-image: url( 'products/cakes/chocolate.cake.160x137.png' );
+}
+[app|style~="products"] > .product[data-id="strawberry.cake"] > .summary::before
+{
+    background-image: url( 'products/cakes/strawberry.cake.160x144.png' );
+}
+[app|style~="products"] > .product[data-id="valentines.cake"] > .summary::before
+{
+    background-image: url( 'products/cakes/valentines.cake.157x160.png' );
+}
+[app|style~="products"] > .product[data-id="wedding.cake"] > .summary::before
+{
+    background-image: url( 'products/cakes/wedding.cake.104x160.png' );
+}
+
+/* Fruits */
+[app|style~="products"] > .product[data-id="apple"] > .summary::before
+{
+    background-image: url( 'products/fruits/apple.160x149.png' );
+}
+[app|style~="products"] > .product[data-id="dark.grapes"] > .summary::before
+{
+    background-image: url( 'products/fruits/dark.grapes.160x99.png' );
+}
+[app|style~="products"] > .product[data-id="grapes"] > .summary::before
+{
+    background-image: url( 'products/fruits/grapes.160x107.png' );
+}
+[app|style~="products"] > .product[data-id="kiwi"] > .summary::before
+{
+    background-image: url( 'products/fruits/kiwi.160x110.png' );
+}
+[app|style~="products"] > .product[data-id="oranges"] > .summary::before
+{
+    background-image: url( 'products/fruits/oranges.160x140.png' );
+}
+
+/* Juices */
+[app|style~="products"] > .product[data-id="pure.grapefruit"] > .summary::before
+{
+    background-image: url( 'products/juices/pure.grapefruit.47x160.png' );
+}
+[app|style~="products"] > .product[data-id="pure.orange"] > .summary::before
+{
+    background-image: url( 'products/juices/pure.orange.47x160.png' );
+}
+[app|style~="products"] > .product[data-id="pure.pineapple"] > .summary::before
+{
+    background-image: url( 'products/juices/pure.pineapple.47x160.png' );
+}
+
+/* Lemonades */
+[app|style~="products"] > .product[data-id="buratino"] > .summary::before
+{
+    background-image: url( 'products/lemonades/buratino.50x160.png' );
+}
+[app|style~="products"] > .product[data-id="coca_cola"] > .summary::before
+{
+    background-image: url( 'products/lemonades/coca_cola.44x160.png' );
+}
+[app|style~="products"] > .product[data-id="fanta"] > .summary::before
+{
+    background-image: url( 'products/lemonades/fanta.45x160.png' );
+}
+[app|style~="products"] > .product[data-id="limpo"] > .summary::before
+{
+    background-image: url( 'products/lemonades/limpo.44x160.png' );
+}
+[app|style~="products"] > .product[data-id="sprite"] > .summary::before
+{
+    background-image: url( 'products/lemonades/sprite.44x160.png' );
+}
+
+/* Ice cream */
+[app|style~="products"] > .product[data-id="karlsons.tio.chocolate"] > .summary::before
+{
+    background-image: url( 'products/icecream/karlsons.tio.chocolate.160x69.png' );
+}
+[app|style~="products"] > .product[data-id="lukss.grape"] > .summary::before
+{
+    background-image: url( 'products/icecream/lukss.grape.160x112.png' );
+}
+[app|style~="products"] > .product[data-id="pols.chocolate"] > .summary::before
+{
+    background-image: url( 'products/icecream/pols.chocolate.160x52.png' );
+}
+[app|style~="products"] > .product[data-id="tio.caramel"] > .summary::before
+{
+    background-image: url( 'products/icecream/tio.caramel.103x160.png' );
+}
+[app|style~="products"] > .product[data-id="tio.chocolate"] > .summary::before
+{
+    background-image: url( 'products/icecream/tio.chocolate.104x160.png' );
+}
+[app|style~="products"] > .product[data-id="tio.cream"] > .summary::before
+{
+    background-image: url( 'products/icecream/tio.cream.160x59.png' );
+}
+[app|style~="products"] > .product[data-id="tio.lemon"] > .summary::before
+{
+    background-image: url( 'products/icecream/tio.lemon.103x160.png' );
+}
+[app|style~="products"] > .product[data-id="viva.caramel"] > .summary::before
+{
+    background-image: url( 'products/icecream/viva.caramel.71x160.png' );
+}
+
+[app|style~="products"] > .product > .summary > .price
+{
+    display: block;
+    font-size: 0.75em;
+}
+
+[app|style~="products"] > .product > .summary > .price > .amount
+{
+    color: #52781a;
+    font-weight: bold;
+}
+
+[app|style~="products"] > .product > .summary > .price > .volume > .suffix sup
+{
+    font-size: 0.6em;
+}
+
+[app|style~="products"] > .product > .order
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: yellow;
+    font-size: 0.75em;
+}
+
+[app|style~="products"] > .product > .order > .volume > .current
+{
+    position: absolute;
+    top: 3em;
+    
+    color: #ce1217;
+    
+    /* White stroke so that the text stands out if
+     * product's image is in the background. */
+    text-shadow:
+        0 0 0.2em white,
+        0 0 0.2em white,
+        0 0 0.2em white,
+        0 0 0.1em white;
+}
+
+[app|style~="products"] > .product > .order > .volume > .current > .qty
+{
+    font-size: 2em;
+}
+
+[app|style~="products"] > .product > .order > .volume > .current > .suffix
+{
+    font-size: 0.85em;
+    margin-right: 0.3em;
+}
+
+[app|style~="products"] > .product > .order > .total
+{
+    display: none;
+}
+
+[app|style~="products"] > .product > .order > .tools > .tool
+{
+    position: absolute;
+    text-indent: -100em;
+    overflow: hidden;
+}
+
+[app|style~="products"] > .product > .order > .tools > .tool.inc
+{
+    top: 0;
+    width: 2.5em;
+    height: 2.5em;
+    
+    font-size: 1.2em;
+    margin-right: 0.25em;
+    
+    background: url( "active.add.icon.66x66.png" ) no-repeat center center;
+    background-size: contain;
+}
+[app|style~="products"] > .product.maximum > .order > .tools > .tool.inc
+{
+    display: none;
+}
+
+[app|style~="products"] > .product > .order > .tools > .tool.dec
+{
+    top: 5.5em;
+    width: 2em;
+    height: 2em;
+    
+    background: url( "subtract.icon.48x48.png" ) no-repeat center center;
+    background-size: contain;
+    
+    margin-right: 0.75em;
+}
+
+/* Shift off unnecessary cpntent so that initially nothing
+ * is visible on the screen. Afterwards, we move the
+ * elements that we need to be visible back to the viewport.
+ * By this we hide parts of text like commas and dots that we
+ * do not want to be visible on the screen. */
+[app|style~="products"] > .product > .summary
+{
+    position: relative;
+}
+
+[app|style~="products"] > .product > .order
+{
+    right: 200%;
+}
+
+[app|style~="products"] > .product > .summary,
+[app|style~="products"] > .product > .order
+{
+    left: -200%;
+}
+
+[app|style~="products"] > .product > .summary::before,
+[app|style~="products"] > .product > .summary > .name,
+[app|style~="products"] > .product > .summary > .price
+{
+    position: relative;
+}
+
+[app|style~="products"] > .product > .summary::before,
+[app|style~="products"] > .product > .summary > .name,
+[app|style~="products"] > .product > .summary > .price,
+[app|style~="products"] > .product > .order > .volume > .current,
+[app|style~="products"] > .product > .order > .tools > .tool
+{
+    right: -200%;
+}
+
+/* Test */
+
+[app|style~="products"] > .product > .order > .tools > .tool.dec,
+[app|style~="products"] > .product > .order > .volume
+{
+    visibility: hidden;
+}
+
+[app|style~="products"] > .product[data-count] > .order > .tools > .tool.inc
+{
+    font-size: 1em;
+    
+    margin-top: 0.25em;
+    margin-right: 0.5em;
+}
+
+[app|style~="products"] > .product[data-count] > .order > .tools > .tool.dec,
+[app|style~="products"] > .product[data-count] > .order > .volume
+{
+    visibility: visible;
+}
+
+[app|style~="products"] > .product[data-count] > .summary::before
+{
+    width: 7em;
+    margin-right: 2em;
+}
+
+[app|style~="products"] > .product[data-count] > .order > .tools > .tool.inc
+{
+    top: 0;
+    width: 2.5em;
+    height: 2.5em;
+    
+    background-image: url( "add.icon.54x54.png" );
+}

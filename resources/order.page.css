@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+body > article > header
+{
+    display: none;
+}
+
+body > article > form
+{
+    margin-top: 1em;
+}
+
+body > article > form > ul
+{
+}
+
+body > article > form > ul > li
+{
+    font-size: 1.5rem;
+    line-height: 2em;
+    margin-top: 0.4em;
+    overflow: auto;
+    
+    position: relative;
+}
+body > article > form > ul > li::after
+{
+    content: ' ';
+    clear: both;
+    font-size: 0;
+}
+body > article > form > ul > li:first-child
+{
+    margin-top: 0;
+}
+
+body > article > form > ul > li > .label,
+body > article > form > ul > li > .value
+{
+    display: inline-block;
+    float: left;
+    line-height: inherit;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    min-height: 2em;
+}
+
+body > article > form > ul > li > .label
+{
+    text-align: right;
+    color: #818181;
+    width: 40%;
+    padding-right: 2.5rem;
+}
+
+body > article > form > ul > li.focused > .label
+{
+    color: black;
+}
+
+body > article > form > ul > li > .value
+{
+    width: 40%;
+    text-align: left;
+    border: 0;
+    padding: 0 1.5rem;
+    
+    background-color: #f0f4fe;
+    
+    -webkit-transition-property: background-color;
+    -webkit-transition-duration: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-delay: 0;
+    
+    -moz-transition-property: background-color;
+    -moz-transition-duration: 200ms;
+    -moz-transition-timing-function: ease-in-out;
+    -moz-transition-delay: 0;
+    
+    -o-transition-property: background-color;
+    -o-transition-duration: 200ms;
+    -o-transition-timing-function: ease-in-out;
+    -o-transition-delay: 0;
+    
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0;
+}
+
+/* Fixes vertical alignment of placeholder text in AppleWebKit/534.30, Galaxy Tab 10 */
+body > article > form > ul > li > input.value
+{
+    line-height: normal;
+}
+
+body > article > form > ul > li.focused > .value
+{
+    background-color: #caffca;
+}
+
+body > article > form > ul > li.focused > .value:invalid
+{
+    background-color: #ffcaca;
+    outline: solid 1px #f89fa1;
+}
+
+body > article > form > ul > li > .hints:empty
+{
+    display: none;
+}
+
+body > article > form > ul > li > .hints
+{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 2em;
+}
+
+body > article > form > ul > .shippingAddress > .map
+{
+    padding-top: 0.4em;
+    clear: both;
+}
+
+body > article > form > ul > .shippingAddress > .map > .canvas
+{
+    height: 10em;
+}
+
+body > article > form > ul > .shippingAddress > .map
+{
+    position: relative;
+    margin: 0 3em;
+}
+
+body > article > form > ul > .shippingAddress > .map::before
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: transparent url( 'loader.32x32.gif' ) no-repeat 2em 2em;
+    content: " ";
+    z-index: 1;
+    
+    visibility: hidden;
+    opacity: 0;
+    
+    -webkit-transition-property: opacity, visibility;
+    -webkit-transition-duration: 100ms, 0;
+    -webkit-transition-timing-function: ease-in-out, linear;
+    -webkit-transition-delay: 0, 100ms;
+    
+    -moz-transition-property: opacity, visibility;
+    -moz-transition-duration: 100ms, 0;
+    -moz-transition-timing-function: ease-in-out, linear;
+    -moz-transition-delay: 0, 100ms;
+    
+    -o-transition-property: opacity, visibility;
+    -o-transition-duration: 100ms, 0;
+    -o-transition-timing-function: ease-in-out, linear;
+    -o-transition-delay: 0, 100ms;
+    
+    transition-property: opacity, visibility;
+    transition-duration: 100ms, 0;
+    transition-timing-function: ease-in-out, linear;
+    transition-delay: 0, 100ms;
+}
+
+body > article > form > ul > .shippingAddress.loading > .map::before
+{
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 100ms;
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-delay: 0;
+    
+    -moz-transition-property: opacity;
+    -moz-transition-duration: 100ms;
+    -moz-transition-timing-function: ease-in-out;
+    -moz-transition-delay: 0;
+    
+    -o-transition-property: opacity;
+    -o-transition-duration: 100ms;
+    -o-transition-timing-function: ease-in-out;
+    -o-transition-delay: 0;
+    
+    transition-property: opacity;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0;
+    
+    visibility: visible;
+    opacity: 1;
+}
+
+body > article > form > ul > .shippingTime > .value
+{
+    width: 50%;
+}
+
+body > article > form > ul > li.itemCost > .value,
+body > article > form > ul > li.shippingCost > .value,
+body > article > form > ul > li.totalCost > .value
+{
+    background: none;
+}
+
+body > article > form > ul > li.totalCost > .label
+{
+    color: #243867;
+}
+
+body > article > form > ul > li.totalCost > .value
+{
+    font-weight: bold;
+}
+
+@media all and (max-width:60em)
+{
+    body > article > form > ul > li
+    {
+        font-size: 1.25rem;
+    }
+    
+    body > article > form > ul > li > .value,
+    body > article > form > ul > .shippingTime > .value
+    {
+        width: 60%;
+    }
+}
+
+@media all and (max-width:40em)
+{
+    body > article > form > ul > li > .label,
+    body > article > form > ul > li > .value
+    {
+        display: block;
+        float: none;
+    }
+    
+    body > article > form > ul > li > .label,
+    body > article > form > ul > li > .value,
+    body > article > form > ul > .shippingTime > .value
+    {
+        width: 100%;
+    }
+    
+    body > article > form > ul > li > .label
+    {
+        text-align: left;
+        white-space: nowrap;
+    }
+    
+    body > article > form > ul > .shippingAddress > .map
+    {
+        margin: 0 2em;
+    }
+}

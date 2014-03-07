@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+body > header
+{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+body > header > .title
+{
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+    
+    font-size: 3rem;
+    color: #c1c1c1;
+    line-height: 2em;
+    padding: 0.2em 1em;
+    padding-right: 0;
+    
+    position: static;
+    text-align: center;
+    
+    clear: both;
+}
+body > header > .title::before
+{
+    display: inline-block;
+    padding-right: 0.5em;
+    
+    background: transparent url( 'tick.icon.77x74.png' ) no-repeat left center;
+    min-width: 77px;
+    min-height: 74px;
+    content: '';
+    
+    position: relative;
+    top: 15px;
+}
+
+@media all and (max-width:60em)
+{
+    body > header > .title
+    {
+        font-size: 2.5rem;
+        line-height: 1.2em;
+        
+        padding-top: 0.8em;
+        padding-left: 0.5em;
+    }
+    
+    body > header > .title::before
+    {
+        display: none;
+    }
+}
+
+@media all and (max-width:40em)
+{
+    body > header
+    {
+        text-align: center;
+    }
+    
+    body > header > .title
+    {
+        padding: 0;
+    }
+}
+
+body > article > header
+{
+    font-size: 1.875em;
+    font-weight: normal;
+    padding-top: 0.7em;
+}
+
+body > article > header,
+body > article > header *
+{
+    line-height: 1.75em;
+}
+
+body > article > header .code
+{
+    font-weight: bold;
+}
+
+@media all and (max-width:60em)
+{
+    body > article > header
+    {
+        font-size: 1.6em;
+    }
+}
+
+@media all and (max-width:40em)
+{
+    body > article > header
+    {
+        font-size: 1.4em;
+    }
+    
+    body > article > header > *
+    {
+        display: inline;
+    }
+    
+    body > article > header > *:nth-child(n+2)::before
+    {
+        content: " ";
+    }
+}
+
+
+body > article > .info > header
+{
+    display: none;
+}
+
+body > article > .info > ul
+{
+    display: table;
+    margin: 0 auto;
+    
+    font-size: 1.5em;
+}
+
+body > article > .info > ul > li
+{
+    display: table-row;
+}
+
+body > article > .info > ul > li > *
+{
+    display: table-cell;
+    line-height: 1.5em;
+}
+
+body > article > .info > ul > li > .label
+{
+    color: #9d9d9d;
+    white-space: nowrap;
+}
+
+body > article > .info > ul > li > .value
+{
+    padding-left: 2em;
+}
+
+body > article > .info > ul > li.shippingTime .min
+{
+    vertical-align: super;
+    font-size: 0.5em;
+}
+
+@media all and (max-width:40em)
+{
+    body > article > .info > ul
+    {
+        display: block;
+        text-align: center;
+        font-size: 0;
+    }
+    
+    body > article > .info > ul > li,
+    body > article > .info > ul > li > *
+    {
+        display: inline;
+    }
+    
+    body > article > .info > ul > li > *
+    {
+        font-size: 1.3rem;
+    }
+    
+    body > article > .info > ul > li > .label
+    {
+        color: inherit;
+    }
+    
+    body > article > .info > ul > li > .label::after
+    {
+        content: " ";
+    }
+    
+    body > article > .info > ul > li > .value
+    {
+        padding: 0;
+        font-weight: bold;
+    }
+    
+    body > article > .info > ul > li:nth-child(n) > .value::after
+    {
+        content: ", ";
+    }
+    
+    body > article > .info > ul > li:last-child > .value::after
+    {
+        content: ".";
+    }
+    
+    body > article > .info > ul > li:nth-child(n+2) > .label
+    {
+        text-transform: lowercase;
+    }
+}

@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+@namespace app "http://stepanov.lv/2013/rtk/partika";
+
+[app|style~="tools"]
+{
+    font-size: 1.875em;
+    
+    margin: 1.3em 0;
+    text-align: center;
+}
+
+[app|style~="tools"] > *
+{
+    display: inline-block;
+    line-height: 1.66em;
+    min-height: 1.66em;
+    
+    color: #52781a;
+    text-decoration: none;
+    padding: 0 0.83em;
+    background-color: #ceff9e;
+    
+    border: 0;
+    
+    -webkit-sizing: border-box;
+    -moz-sizing: border-box;
+    -o-sizing: border-box;
+    box-sizing: border-box;
+}
+
+[app|style~="tools"] > *:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+[app|style~="tools"] > .reject
+{
+    background: none;
+    color: #999999;
+    font-size: 0.85em;
+}
+[app|style~="tools"] > .reject:hover
+{
+    color: #4d6aab;
+}
+
+@media all and (max-width:40em)
+{
+    [app|style~="tools"]
+    {
+        font-size: 1.5em;
+    }
+}

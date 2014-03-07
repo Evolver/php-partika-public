@@ -1,0 +1,360 @@
+@charset "UTF-8";
+
+@import "fonts/fonts.css";
+
+label
+{
+    cursor: pointer;
+}
+
+html
+{
+	min-width: 100%;
+	min-height: 100%;
+	background-color: white;
+	font-size: 1em;
+	font-family: "Franklin Gothic Book", "Lato";
+	color: black;
+	
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html::after
+{
+    visibility: hidden;
+    opacity: 0;
+    
+    content: 'Lūdzu, uzgaidiet...';
+    
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    padding: 2em;
+    padding-left: 4em;
+    font-size: 1.5em;
+    font-style: italic;
+    color: gray;
+    text-shadow: -0.1em -0.1em 0.5em white,
+                  0.1em  0.1em 0.5em white;
+    
+    background: rgba( 255, 255, 255, 0.5 ) url( 'loader.32x32.gif' ) no-repeat 2em 2em;
+    
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 200ms;
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-delay: 500ms;
+    
+    -moz-transition-property: opacity;
+    -moz-transition-duration: 200ms;
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-delay: 500ms;
+    
+    -o-transition-property: opacity;
+    -o-transition-duration: 200ms;
+    -o-transition-timing-function: ease-out;
+    -o-transition-delay: 500ms;
+    
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    transition-delay: 500ms;
+}
+
+html.loading::after
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+body
+{
+	margin-top: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	
+	padding: 0 1rem;
+	
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    min-width: 24rem;
+}
+
+body a
+{
+	text-decoration: underline;
+	
+	-webkit-transition-property: color, text-decoration, opacity;
+	-webkit-transition-duration: 200ms;
+	-webkit-transition-timing-function: ease-in-out;
+	-webkit-transition-delay: 0;
+	
+	-moz-transition-property: color, text-decoration, opacity;
+	-moz-transition-duration: 200ms;
+	-moz-transition-timing-function: ease-in-out;
+	-moz-transition-delay: 0;
+	
+	-o-transition-property: color, text-decoration, opacity;
+	-o-transition-duration: 200ms;
+	-o-transition-timing-function: ease-in-out;
+	-o-transition-delay: 0;
+	
+	transition-property: color, text-decoration, opacity;
+	transition-duration: 200ms;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0;
+	
+	color: #4d6aab;
+}
+
+body a:hover
+{
+	text-decoration: none;
+}
+
+body > header
+{
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    padding-top: 2rem;
+	
+	-webkit-transition-property: background-size, padding;
+	-webkit-transition-duration: 100ms;
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-delay: 0;
+	
+	-moz-transition-property: background-size, padding;
+	-moz-transition-duration: 100ms;
+	-moz-transition-timing-function: ease-out;
+	-moz-transition-delay: 0;
+	
+	-o-transition-property: background-size, padding;
+	-o-transition-duration: 100ms;
+	-o-transition-timing-function: ease-out;
+	-o-transition-delay: 0;
+	
+	transition-property: background-size, padding;
+	transition-duration: 100ms;
+	transition-timing-function: ease-out;
+	transition-delay: 0;
+}
+
+body > header a,
+body > footer a
+{
+    color: #4d6aab;
+}
+
+body > header > .title
+{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+	padding: 0.1em 0.8em;
+	font-size: 1.5rem;
+	color: white;
+	
+	background: #5373ba url( "titlebar.bg.1x56.png" ) repeat-x left top;
+	/* Upgrade to linear gradient if possible */
+	background: -moz-linear-gradient( #5475bd, #6186d7 23%, #4964a1 85%, #5475bd );
+	background: -webkit-linear-gradient( #5475bd, #6186d7 23%, #4964a1 85%, #5475bd );
+	background: -ms-linear-gradient( #5475bd, #6186d7 23%, #4964a1 85%, #5475bd );
+	background: linear-gradient( #5475bd, #6186d7 23%, #4964a1 85%, #5475bd );
+	
+	box-shadow: 0.05em 0.05em 0.1em #222222;
+	text-shadow: 0 0 0.05em #333333;
+	
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    min-width: 24rem;
+}
+
+/* Devices with too small screen: show title's text
+ * in the middle of the titlebar. */
+@media all and (max-width:30em)
+{
+	body > header > .title
+	{
+		text-align: center;
+	}
+}
+
+body > header > .app
+{
+    float: left;
+    width: 20rem;
+    
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    white-space: nowrap;
+}
+
+body > header > .app > .name
+{
+    font-size: 3em;
+    color: #4d6aaa;
+    text-shadow: 0.03em 0.03em 0.02em #333333;
+}
+
+body > header > .app > .name a
+{
+    text-decoration: none;
+}
+
+body > header > .app > .descr
+{
+    color: #555555;
+    font-size: 1.2em;
+}
+
+body > header > .info > .entry
+{
+    float: left;
+    vertical-align: top;
+    margin: 0.5em 1em;
+    max-width: 25em;
+}
+
+body > header > .info > .entry > .title
+{
+    color: #333232;
+    font-weight: bold;
+}
+
+body > header > .info > .entry > .content
+{
+    color: #555555;
+}
+
+body > header > .info > .entry > .content > span
+{
+    display: block;
+}
+
+body > header > .info > .entry.contacts a
+{
+    color: #555555;
+    text-decoration: none;
+}
+body > header > .info > .entry.contacts a:hover
+{
+    text-decoration: underline;
+}
+
+body > header::after
+{
+    display: block;
+    content: ' ';
+    font-size: 0;
+    clear: both;
+}
+
+body > article
+{
+    padding-top: 1em;
+}
+
+body > article::after
+{
+	display: block;
+	clear: both;
+	content: " ";
+	height: 0;
+	overflow: hidden;
+}
+
+body > article > header
+{
+	font-size: 1.25rem;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 0.7em;
+}
+
+body > article > header ~ header
+{
+    padding-top: 2em;
+}
+
+body > article section.text > p
+{
+	text-align: justify;
+}
+
+body > article section.text > p::before
+{
+    display: inline-block;
+    content: ' ';
+    padding-left: 2em;
+}
+
+body > article section.text > p + p
+{
+	margin-top: 1em;
+}
+
+body > footer
+{
+	margin: 4em 0 0 0;
+	padding: 1em 0;
+	background-color: #fafafa;
+}
+
+/* Simulates 1em bottom margin. Needed for certain browsers
+   to correctly calculate scrollHeight */
+body::after
+{
+    display: block;
+    content: ' ';
+}
+
+body > footer > .about
+{
+    font-size: 1.3em;
+    line-height: 2em;
+    text-align: center;
+    color: transparent;
+    
+    text-shadow: 0 0 0 #c1c1c1,
+                 -0.03em -0.03em 0 rgba( 0, 0, 0, 0.6 );
+}
+
+/* Devices with resolution less than the preferred
+ * width of header: application info block should
+ * go over the additional information. */
+@media all and (max-width:40em)
+{
+    body > header
+    {
+        text-align: center;
+    }
+    
+    body > header > .app
+    {
+        float: none;
+        width: auto;
+    }
+    
+    body > header > .info
+    {
+        margin-top: 1em;
+    }
+    
+    body > header > .info > .entry
+    {
+        float: none;
+        display: inline-block;
+    }
+}

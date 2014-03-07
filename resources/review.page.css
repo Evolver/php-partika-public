@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.cart
+{
+    position: static;
+    border-bottom: solid 0.25em #cccccc;
+    border: 0;
+    box-shadow: none;
+    clear: both;
+}
+
+.cart[data-items="0"] > .summary > .actions > .proceed
+{
+    display: none;
+}

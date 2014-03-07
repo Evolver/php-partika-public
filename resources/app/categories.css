@@ -1,0 +1,324 @@
+@charset "UTF-8";
+
+@namespace app "http://stepanov.lv/2013/rtk/partika";
+
+[app|style~="categories"]
+{
+    display: block;
+    margin-right: 10rem;
+    
+    border-color: #dddddd;
+    border-style: dotted;
+    border-width: 0 0.2em 0 0;
+}
+
+[app|style~="categories"]::after
+{
+    content: ' ';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+
+[app|style~="categories"] > .title
+{
+	display: none;
+}
+
+[app|style~="categories"] > .list > .category > .title
+{
+	text-align: center;
+	text-decoration: none;
+	
+	color: #243867;
+	cursor: pointer;
+    opacity: 0.7;
+    
+    float: right;
+    position: relative;
+    right: -10rem;
+    margin-left: -10rem;
+    
+    width: 10rem;
+    height: 6rem;
+    
+    font-size: 1em;
+    
+    -webkit-transition-property: font-size, opacity, margin;
+    -webkit-transition-duration: 100ms;
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-delay: 0;
+    
+    -moz-transition-property: font-size, opacity, margin;
+    -moz-transition-duration: 100ms;
+    -moz-transition-timing-function: ease-in-out;
+    -moz-transition-delay: 0;
+    
+    -o-transition-property: font-size, opacity, margin;
+    -o-transition-duration: 100ms;
+    -o-transition-timing-function: ease-in-out;
+    -o-transition-delay: 0;
+    
+    transition-property: font-size, opacity, margin;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0;
+    
+    clear: right;
+}
+
+[app|style~="categories"] > .list > .category > .title:hover,
+[app|style~="categories"] > .list > .category.selected > .title
+{
+	color: inherit;
+	opacity: 1;
+}
+
+[app|style~="categories"] > .list > .category.selected > .title
+{
+	font-size: 1.1rem;
+	text-shadow: 0 0 0.1em white;
+    text-decoration: underline;
+}
+
+[app|style~="categories"] > .list > .category.selected > .title:hover
+{
+	text-decoration: none;
+}
+
+[app|style~="categories"] > .list > .category > .title::before
+{
+	content: '';
+	background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 4em;
+	width: 7em;
+	
+	-webkit-transition-property: top;
+	-webkit-transition-duration: 100ms;
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-delay: 0;
+	
+	-moz-transition-property: top;
+	-moz-transition-duration: 100ms;
+	-moz-transition-timing-function: ease-out;
+	-moz-transition-delay: 0;
+	
+	-o-transition-property: top;
+	-o-transition-duration: 100ms;
+	-o-transition-timing-function: ease-out;
+	-o-transition-delay: 0;
+	
+	transition-property: top;
+	transition-duration: 100ms;
+	transition-timing-function: ease-out;
+	transition-delay: 0;
+}
+[app|style~="categories"] > .list > .category > .title:hover::before
+{
+	top: -0.5em;
+}
+
+[app|style~="categories"] > .list > .category[data-id="milk"] > .title::before
+{
+    background-image: url( 'categories/milk.products.230x158.png' );
+}
+
+[app|style~="categories"] > .list > .category[data-id="vegetables"] > .title::before
+{
+    background-image: url( 'categories/vegetables.238x197.png' );
+}
+
+[app|style~="categories"] > .list > .category[data-id="meat"] > .title::before
+{
+    background-image: url( 'categories/meat.products.217x128.png' );
+}
+
+[app|style~="categories"] > .list > .category[data-id="seafood"] > .title::before
+{
+    background-image: url( 'categories/seafood.250x114.png' );
+}
+
+[app|style~="categories"] > .list > .category[data-id="cakes"] > .title::before
+{
+    background-image: url( 'categories/cakes.194x173.png' );
+}
+
+[app|style~="categories"] > .list > .category[data-id="fruits"] > .title::before
+{
+    background-image: url( 'categories/fruits.228x187.png' );
+}
+
+[app|style~="categories"] > .list > .category[data-id="juices"] > .title::before
+{
+    background-image: url( 'categories/juices.143x134.png' );
+}
+
+[app|style~="categories"] > .list > .category[data-id="lemonades"] > .title::before
+{
+    background-image: url( 'categories/lemonades.229x120.png' );
+}
+
+[app|style~="categories"] > .list > .category[data-id="icecream"] > .title::before
+{
+    background-image: url( 'categories/icecream.190x140.png' );
+}
+
+[app|style~="categories"] > .list > .category[data-id="alcohol"] > .title::before
+{
+    background-image: url( 'categories/alcohol.167x150.png' );
+}
+
+[app|style~="categories"] > .list > .category > .products
+{
+    display: none;
+    float: left;
+    position: relative;
+}
+
+[app|style~="categories"] > .list > .category.selected > .products
+{
+    display: block;
+    width: 100%;
+}
+
+/* Very dirty. Begging for CSS3 regions module. */
+[app|style~="categories"] > .list > .category:nth-child(1) > .products
+{
+    top: -0;
+    margin-bottom: -0;
+}
+[app|style~="categories"] > .list > .category:nth-child(2) > .products
+{
+    top: -6rem;
+    margin-bottom: -6rem;
+}
+[app|style~="categories"] > .list > .category:nth-child(3) > .products
+{
+    top: -12rem;
+    margin-bottom: -12rem;
+}
+[app|style~="categories"] > .list > .category:nth-child(4) > .products
+{
+    top: -18rem;
+    margin-bottom: -18rem;
+}
+[app|style~="categories"] > .list > .category:nth-child(5) > .products
+{
+    top: -24rem;
+    margin-bottom: -24rem;
+}
+[app|style~="categories"] > .list > .category:nth-child(6) > .products
+{
+    top: -30rem;
+    margin-bottom: -30rem;
+}
+[app|style~="categories"] > .list > .category:nth-child(7) > .products
+{
+    top: -36rem;
+    margin-bottom: -36rem;
+}
+[app|style~="categories"] > .list > .category:nth-child(8) > .products
+{
+    top: -42rem;
+    margin-bottom: -42rem;
+}
+[app|style~="categories"] > .list > .category:nth-child(9) > .products
+{
+    top: -48rem;
+    margin-bottom: -48rem;
+}
+[app|style~="categories"] > .list > .category:nth-child(10) > .products
+{
+    top: -54rem;
+    margin-bottom: -54rem;
+}
+[app|style~="categories"] > .list > .category:nth-child(11) > .products
+{
+    top: -60rem;
+    margin-bottom: -60rem;
+}
+[app|style~="categories"] > .list > .category:nth-child(12) > .products
+{
+    top: -66rem;
+    margin-bottom: -66rem;
+}
+[app|style~="categories"] > .list > .category:nth-child(13) > .products
+{
+    top: -72rem;
+    margin-bottom: -72rem;
+}
+[app|style~="categories"] > .list > .category:nth-child(14) > .products
+{
+    top: -78rem;
+    margin-bottom: -78rem;
+}
+[app|style~="categories"] > .list > .category:nth-child(15) > .products
+{
+    top: -84rem;
+    margin-bottom: -84rem;
+}
+[app|style~="categories"] > .list > .category:nth-child(16) > .products
+{
+    top: -90rem;
+    margin-bottom: -90rem;
+}
+[app|style~="categories"] > .list > .category:nth-child(17) > .products
+{
+    top: -96rem;
+    margin-bottom: -96rem;
+}
+[app|style~="categories"] > .list > .category:nth-child(18) > .products
+{
+    top: -102rem;
+    margin-bottom: -102rem;
+}
+[app|style~="categories"] > .list > .category:nth-child(19) > .products
+{
+    top: -108rem;
+    margin-bottom: -108rem;
+}
+[app|style~="categories"] > .list > .category:nth-child(20) > .products
+{
+    top: -114rem;
+    margin-bottom: -114rem;
+}
+[app|style~="categories"] > .list > .category:nth-child(21) > .products
+{
+    top: -120rem;
+    margin-bottom: -120rem;
+}
+[app|style~="categories"] > .list > .category:nth-child(22) > .products
+{
+    top: -126rem;
+    margin-bottom: -126rem;
+}
+[app|style~="categories"] > .list > .category:nth-child(23) > .products
+{
+    top: -132rem;
+    margin-bottom: -132rem;
+}
+[app|style~="categories"] > .list > .category:nth-child(24) > .products
+{
+    top: -138rem;
+    margin-bottom: -138rem;
+}
+[app|style~="categories"] > .list > .category:nth-child(24) > .products
+{
+    top: -144rem;
+    margin-bottom: -144rem;
+}
+
+@media all and (max-width:60em)
+{
+    [app|style~="categories"]
+    {
+        border: none;
+    }
+}
